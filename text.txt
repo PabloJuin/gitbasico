@@ -116,4 +116,151 @@ arriba resta lo q saque y sus lineas y suma lo q agregue y
 sus lineas.
 
 si lo quiero agregar al s.a. git add y p/guardarlo git commit
+
+dice 1 arch cambiado, 12 inserciones x lo q escribi en index
+y 1 borrado x la linea anterior
+
+*/
+
+/* con git log nos aparecen ahora la foto del codigo anterior
+y del codigo nuevo arriba donde nos aparece HEAD -> master,
+es decir q ahi estamos parados
+*/
+
+/* si queremos agregar arch q queremos ignorar en git pero q 
+los usamos en el working directory:
+
+ej: este proy tiene cod de prueba, puede ser cualq tipo de 
+arch, el s.o. lo reconoce =.
+creamos 1 carpeta test con arch test.js
+git status y nos aparece la carp en rojo como p/agregarla.
+
+.gitignore:
+creo este arch y aqui coloco arch y carp q
+no quiera agregar a git.
+
+ej: escribo test (solo eso ya q es 1 carp), git status y
+nada p/commit salvo el arch .gitignore
+
+como lo voy a precisar: git add .gitignore
+
+se agrega pero no aparece la carp test, lo mismo si creo
+otra carp o arch y las coloco en .gitignore uno abajo del
+otro.
+
+git add p/agregar los cambios de gitignore y git commit -m.
+
+ya sacamos el snapshot.
+*/
+
+/* git branch:
+nos muestra q tenemos 1 solo proy en el q estamos trabajando.
+nos aparece master.
+
+si queremos trabajar en otro proy alternativo con 1 login:
+lo llamo x ej login:
+git branch login (en este ej)
+ya lo creo, ingreso git branch y ahora aparecen login y
+master, este ult en verde. si me quiero mover a login:
+
+git checkout login (en este ej):
+ahora me dice q switched to branch "login"
+
+git branch y ahora login aparece en verde, me cambie de rama
+
+si ahora quiero agregar carp y arch lo hago
+las carp tienen q tener algo dentro p/q las reconozca status
+ej: creo la carp login, la carp authentication c el arch
+index.js y aparte 1 arch index.js fuera de ella.
+
+agrego to2 los arch q tengo con:
+
+git add .
+
+s/necesidad de agregar 1x1
+
+no agrega la carp login xq esta vacia y no sirve de nada.
+commit -m "version alt con un login"
+log y ahora aparecen las ramas y el HEAD -> login, ahora esta
+ahi.
+
+p/salir del log:
+:wq
+
+si ahora escribo git checkout master, cambia de rama y
+desaparecen los arch y carp de login
+
+si escribo git log no aparece el commit login xq le E a la
+otra rama
+
+esta es una manera de jugar con versiones alternativas.
+*/
+
+AHORA LO Q VOY A PRECISAR ES SUBIR MI CODIGO A 1
+REPOSITORIO XA Q LOS DESARROLLADORES A LOS Q LES PERMITA
+PUEDAN AYUDARME A MODIFICARLO. P/ESO ENTRO A GITHUB.
+
+tiene bastantes proyectos open source y ayuda mucho con sus
+herramientas.
+vamos a usar la herramienta repositorio de codigos
+donde voy a poder subir todo el codigo de mis proy de
+manera gratuita.
+puedo pagar una cuenta premium p/subir proy reales
+
+como subir ntro codigo p/q to2 los desarrolladores puedan 
+modificarlo o alterarlo, etc 
+
+1vez subidos los puedo ver directam desde github s/necesidad
+de descargarlos p/verlos.
+
+Vamos a Repositories y apretamos new o directam:
+github.com/new   (1 vez q ya me he registrado obviam)
+
+me va a incluir el proyecto y tb la revision de mi historia,
+es decir mi git log p/luego poder acceder a cualq version.
+
+p/subirlo de manera priv preciso cta premium, si es publ no
+nombro mi proy como quiera y la descripcion tb, creo el rep.
+
+me envia a una direccion web y me enseña los comandos q ya
+usamos aqui git init, commit y un readme q ya aprenderemos.
+
+el importante es el git remote q me especifica en q direcc
+web subiremos el codigo, en la q estamos obviam. luego de
+hacerlo me dice q lo suba con git push
+
+copio el comando de git remote con la dir web y lo pego en
+la consola gitbash. si git status no se ve ningun cambio
+
+luego copiamos o escribimos git push -u origin master
+no cambia nada pero me abre una ventana de github p/q me
+loguee nuevam, lo hago y empieza a subir todo el codigo.
+
+refrescamos la pagina y nos sube todo el proy y sus arch.
+
+clickeamos c/arch y lo abre desde ahi.
+
+readme ayuda a las personas interesadas a saber de q se 
+trata mi proy. le damos al boton readme y escribimos lo q
+queremos. apretamos commit new file y lo agrega.
+ahi aparece el nombre y la descrip de mi proy.
+
+el lenguaje se llama mark down, puedo investigar p/mejorar
+mi descrip de q hace mi proy.
+
+si cierro mi proy, cierro gitbash y elimino mi proy puedo
+volver a descargarlo o clonarlo.
+
+puedo descargarlo como un zip o copiando la url, q se hace
+directam desde el boton clone or download
+
+abrimos git bash cd Desktop y
+git clone (la URL q copiamos del proy en github). enter y
+nos crea de nuevo el proy.
+si cd (el nombre del proy) enter y luego git log aparecen
+todas las ramas q hemos ido modificando a lo largo del
+tiempo. nos dice q hay otro branch, etc.
+
+podemos aprender + herramientas de git pero esto es lo
+basicos
 */
