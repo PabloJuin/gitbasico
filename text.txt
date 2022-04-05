@@ -1,0 +1,99 @@
+/*cdo trabajamos con git vamos a tener una manera de seguir
+los archivos. pero antes de empezar con cualq otro comando
+es inicializar el repositorio de codigo.
+1ro tengo q abrir un terminal,puedo ir a la carpeta del proy
+y darle shift clic derecho y elegir git bash here
+o puedo presionar windows r escribir cmd y se abre la consola
+. navegamos al escritorio con cd Desktop, cd proyecto y allí
+podriamos escribir git init pero vamos a usar git bash
+hacemos lo mismo con las cd.
+si ingreso ls me aparecen los 2 arch app.js e index.html*/
+
+/* git init
+p/inicializar un proyecto nuevo, vamos a usar git p/ ctrlar
+sus funciones.
+nos crea una carpeta .git dentro de mi proyecto. se encarga
+de administrar to2 los cambios de mi codigo. NO debemos tocar
+nada de ahí. es una carpeta oculta. asi trabaja internam git
+git init ya nos hace trabajar en el working directory*/
+
+/*A MI NO ME APARECE LA CARP.GIT PERO SI LOS SIMBOLOS U A
+LA DERECHA DE C/ARCH Q SE PUSIERON DE COLOR VERDE
+FUNCIONA EL RESTO = */
+
+/*git status
+p/ver el estado de ntros arch y q arch estamos trabajando.
+aparece no commit yet, estos arch estan en el aire, aun no
+los he agregado a mi staging area (entorno de trabajo) */
+
+/*git add
+p/agregar un arch al staging area.
+ej: git add app.js: ahora con git status aparece un new file
+app.js en verde y vuelve a aparecer en rojo index.html xq aun
+no lo agregamos (untracked file)
+hago lo mismo c index.html y listo.
+puedo decir q estos 2 arch conforman la 1er version de mi
+prog.
+Creamos un nuevo arch style.css, pasa lo mismo. lo tenemos q
+agregar con git add p/q aparezca en verde como new file*/
+
+/* CDO AGREGO C/ARCH AL S.A. LA U CAMBIA POR A, LOS NUEVOS Q
+AUN NO AGREGUE SIGUEN CON U . CREO QUE ES:
+A ADDED 
+U UNSTAGED
+M MODIFIED*/
+
+/*git commit
+p/crear un 1er punto de ctrl de ntro codigo.
+Nos dice please tell me who you are.
+xq muchos desarrolladores pueden hacer multiples cambios.
+p/comenzar a trabajar con git 1ero debemos configurarlo.
+pero en la consola ya nos da los comandos basicos xa hacerlo.
+
+git config --global user.email
+escribimos e/comillas el mail
+si escribimos mal el mail volvemos a tipear el comando y 
+listo. a q mail se va a asociar c/cambio en el codigo.
+
+git config --global user.name
+escribimos e/comillas el nombre
+p/config el nombre del usuario
+
+ahora si escribimos git commit p/hacer ntro 1er snapshot.
+vamos a decirle q es el 1er punto de partida de ntro proy.
+
+nos aparece una pantalla en la q p/escribir hay q presionar 
+i de insert. ahi dejamos un msj, ej: mi 1er commit.
+le damos escape y escribimos 2ptos w de write y Q de quit:
+:wq
+nos aparece ahora en consola q 3 arch cambiaron y 2 se
+insertaron. y a c/u le asigna un hash o un id.
+ahora tenemos la opcion de ir a esta 1era v de ntro prog
+
+podemos evitar entrar a esa pantalla con el comando:
+git commit -m y aquí el mensaje q queremos mostrar. es
+la forma + utilizada de hecho.
+ */
+
+ /*git log
+ aparece ahora un hash p/poder diferenciar mi prog, dice tb 
+ el autor (el usuario y mail), la fecha y el mensaje.
+ si pongo git status me dice nada p/commit y q mi working
+ tree esta limpio. to2 los cambios fueron hechos y x ahora
+ no
+ */
+
+ /*vamos a necesitar una manera p/volver atras a los cambios:
+
+ ej:
+ modifico el index.html y en vez de "texto html" escribo 1
+ estructura html con title Primera Página. Guardamos.
+ git status nos dice q index.html ha sido modificado
+ pero me dice q puedo descartar los cambios con:
+
+ git checkout -- index.html (aqui en el ejemplo), s/comillas
+ y con ese espacio.
+ AHORA ES git restore index.html (en este ej)
+ automaticam el arch en el vscode vuelve a ser como antes
+
+ */
