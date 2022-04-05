@@ -96,9 +96,24 @@ la forma + utilizada de hecho.
  y con ese espacio.
 
  AHORA ES: 
- git restore index.html (en este ej)
+         git restore index.html (en este ej)
  automaticam el arch en el vscode vuelve a ser como antes
 
- 
-
+ al no haberle hecho un snapshot con commit perdimos lo q 
+ habiamos modificado en el index.
  */
+
+
+ /*p/ver las diferencias e/el arch anterior y el modificado:
+
+ ej:
+ modifico de nuevo el arch index.html y luego git status me
+ dice q ese arch se modifico.
+           git diff index.html (en este ej)
+me dice en rojo lo q decia el anterior y en verde el nuevo 
+en la misma consola.
+arriba resta lo q saque y sus lineas y suma lo q agregue y
+sus lineas.
+
+si lo quiero agregar al s.a. git add y p/guardarlo git commit
+*/
