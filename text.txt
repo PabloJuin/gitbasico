@@ -91,9 +91,14 @@ la forma + utilizada de hecho.
  git status nos dice q index.html ha sido modificado
  pero me dice q puedo descartar los cambios con:
 
+ YA NO +:
  git checkout -- index.html (aqui en el ejemplo), s/comillas
  y con ese espacio.
- AHORA ES git restore index.html (en este ej)
+
+ AHORA ES: 
+ git restore index.html (en este ej)
  automaticam el arch en el vscode vuelve a ser como antes
+
+ 
 
  */
