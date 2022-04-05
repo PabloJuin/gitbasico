@@ -185,7 +185,7 @@ log y ahora aparecen las ramas y el HEAD -> login, ahora esta
 ahi.
 
 p/salir del log:
-:wq
+:q
 
 si ahora escribo git checkout master, cambia de rama y
 desaparecen los arch y carp de login
